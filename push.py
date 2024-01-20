@@ -5,6 +5,7 @@ def run_comando(comando):
 	output = process.communicate()[0]
 
 comentario = input("Introduzca comentario: ")
+run_comando(["git", "pull"])
 run_comando(["git", "init"])
 run_comando(["git", "add", "."])
 run_comando(["git", "commit", "-m", comentario])
